@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Página Web</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a HTML</h1>
+    </header>
+
+    <div class="container">
+      <nav>
+         <ul>
+             <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+             <li><a href="#noticias"><i class="fas fa-newspaper"></i> Noticias</a></li>
+             <li><a href="#acerca"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+             <li><a href="#contacto"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+         </ul>
+     </nav>
+        <main>
+            <section id="inicio"> 
+               <h3><i class="fas fa-home"></i>
+                 Inicio
+              </h3>               
+                <article>
+                    <h2>¿Qué es HTML5?</h2>
+                    <p class="post-meta">Publicado el 10/07/2018 por UMG-Jalapa</p>
+                    <p>Durante los últimos años, el estándar HTML5 se ha estado afianzando en muchas páginas web. Sin embargo, ¿qué queremos decir con esto? ¿Cuál es la diferencia crucial entre el HTML "común", por así decirlo, y este nuevo estándar? Hoy hablaremos sobre esto y responderemos a la pregunta de qué es HTML5.</p>
+                    <p>HTML5 es un lenguaje más semántico. En otras palabras, se le da un significado a las diferentes partes de la páginas Web, de forma que el navegador puede distinguir la parte que forma parte de la cabecera gracias a que hay una etiqueta que dice "Cabecera", bueno lo dice en inglés: <code>&lt;header&gt;</code>. ¿Para qué sirve esto? Ayuda a los buscadores como Google a entender tu página Web, algo que se espera sea positivo de cara al SEO, y también sirve para que los navegadores muestren de forma inteligente diferentes versiones de la página Web sin tener que usar plug-ins para dispositivos específicos.</p>
+                </article>
+
+                <article>
+                    <h2>Introducción a CSS3</h2>
+                    <p class="post-meta">Publicado el 10/07/2018 por UMG-Jalapa</p>
+                    <p>El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en XHTML). El W3C (World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.</p>
+                    <p>¿Para qué sirve el CSS3?</p>
+                    <p>El CSS sirve para definir la estética de un sitio web en un documento externo y eso mismo permite que modificando ese documento (la hoja CSS) podamos cambiar la apariencia de todo un sitio web, el mismo sitio web puede variar totalmente de estética cambiando solo la CSS, sin tocar para nada los documentos HTML o .js o asp que lo hacen funcionar.</p>
+                </article>
+
+                <article>
+                    <h2>¿Qué es y para qué sirve JavaScript?</h2>
+                    <p>JavaScript (JS) es un lenguaje ligero e interpretado, orientado a objetos con funciones de primera clase, más conocido como el lenguaje de script para páginas web, pero también usado en muchos entornos sin navegador, tales como node.js.</p>
+                    <div id="more-content" style="display: none;">
+                        <p>Es el lenguaje de programación más conocido para el desarrollo web, permitiendo la interacción dinámica con el contenido del sitio, como la validación de formularios, creación de juegos, animaciones, y mucho más.</p>
+                    </div>            
+                    <button onclick="toggleContent()" id="toggle-button">Leer Más</button>
+                </article>
+            </section>     
+
+            <section id="noticias"> 
+                <h3><i class="fas fa-newspaper"></i>  Noticias</h3>               
+                <article>
+                   <h2>Google Gmail adoptará HTML5</h2>
+                   <p class="post-meta">Publicado el 10/07/2018 por UMG-Jalapa</p>
+                   <p>Todos sabemos que Google y Apple están enamorados del nuevo HTML5, por lo que no es una sorpresa descubrir que muchas de las nuevas funcionalidades del servicio Google Gmail serán producidas sobre este nuevo formato.</p>
+                   <p>Horas después de confirmar que el HTML5 será integrado a su servicio Gmail, Google anunció esta mañana el lanzamiento de un sitio con recursos para desarrolladores enfocado en las nuevas tecnologías HTML5, llamado HTML5rocks.com.</p>
+                </article>
+                <article>
+                   <h2>HTML5: La Nueva Era del Desarrollo Web</h2>
+                   <p class="post-meta">Publicado el 05/08/2023 por Equipo HTML</p>
+                   <p>Desde su introducción, HTML5 ha revolucionado la forma en que se desarrollan las aplicaciones web. Con nuevas APIs, elementos multimedia, y capacidades mejoradas de almacenamiento, HTML5 sigue siendo el estándar dominante en la creación de experiencias web interactivas y modernas.</p>
+                   <p>Grandes empresas como Google, Apple, y Microsoft continúan invirtiendo en tecnologías que se basan en HTML5, haciendo que este lenguaje de marcado sea una habilidad esencial para los desarrolladores.</p>
+                </article>
+                <article>
+                   <h2>Eventos y Conferencias sobre HTML5 en 2024</h2>
+                   <p class="post-meta">Publicado el 16/08/2024 por Comunidad HTML5</p>
+                   <p>El próximo año estará lleno de eventos enfocados en HTML5, donde expertos de la industria compartirán las últimas novedades y mejores prácticas. Conferencias como HTML5Conf y WebSummit son solo algunos de los encuentros que reunen a profesionales de todo el mundo para discutir el futuro del desarrollo web.</p>
+                   <p>No te pierdas la oportunidad de aprender de los mejores y conectar con otros desarrolladores apasionados por HTML5.</p>
+                </article>        
+             </section>
+             <section id="acerca"> 
+                <h3><i class="fas fa-info-circle"></i>  Acerca de Nosotros</h3>
+                <p>Somos un grupo de entusiastas y profesionales del desarrollo web dedicados a promover el uso y la adopción de HTML5 en la industria. Desde que HTML5 fue presentado, hemos trabajado arduamente para educar a la comunidad de desarrolladores sobre sus beneficios y capacidades.</p>
+                <p>Nuestra misión es empoderar a desarrolladores de todos los niveles para que puedan crear sitios y aplicaciones web más potentes, accesibles, y eficientes. A través de nuestros recursos educativos, talleres y noticias, buscamos ser una fuente de conocimiento confiable y actualizada sobre todo lo relacionado con HTML5.</p>
+                <p>Únete a nuestra comunidad y mantente al tanto de las últimas tendencias y avances en HTML5.</p>
+             </section>
+            <section id="contacto">
+               <h3><i class="fas fa-envelope"></i>
+                  ¡Contáctanos!
+              </h3>
+               <div class="contact-info">
+                   <div class="contact-item">
+                       <i class="fab fa-facebook"></i>
+                       <a href="https://www.facebook.com/mynor.ceron.79" target="_blank">Facebook</a>
+                   </div>
+                   <div class="contact-item">
+                       <i class="fab fa-twitter"></i>
+                       <a href="https://x.com/MynorGaitan" target="_blank">Twitter</a>
+                   </div>
+                   <div class="contact-item">
+                       <i class="fab fa-instagram"></i>
+                       <a href="https://www.instagram.com/mynorwave/" target="_blank">Instagram</a>
+                   </div>
+                   <div class="contact-item">
+                       <i class="fas fa-phone"></i>
+                       <a href="tel:+5238616365">+52 3861-6365</a>
+                   </div>
+                   <div class="contact-item">
+                       <i class="fas fa-envelope"></i>
+                       <a href="mailto:mcerong1@miumg.edu.gt">mcerong1@miumg.edu.gt</a>
+                   </div>
+               </div>
+           </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright © 2018 - www.misitio.com</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
